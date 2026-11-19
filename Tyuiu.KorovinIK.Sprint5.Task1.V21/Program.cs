@@ -5,7 +5,7 @@ namespace Tyuiu.KorovinIK.Sprint5.Task1.V21
     {
         static void Main(string[] args)
         {
-            int startVaule = -5;
+            int startValue = -5;
             int stopValue = 5;
 
             DataService ds = new DataService();
@@ -18,9 +18,9 @@ namespace Tyuiu.KorovinIK.Sprint5.Task1.V21
 
             Console.WriteLine("* : Тема Класс File. Запись данных в текстовый файл                 *");
 
-            Console.WriteLine("* Задание #0                                            *");
+            Console.WriteLine("* Задание #1                                           *");
 
-            Console.WriteLine("* Вариант #15                                                        *");
+            Console.WriteLine("* Вариант #21                                                       *");
 
             Console.WriteLine("* Выполнил: Коровин Илья Константинович | ИСТНб-26-1                       *");
 
@@ -38,7 +38,7 @@ namespace Tyuiu.KorovinIK.Sprint5.Task1.V21
 
             Console.WriteLine("*****************************************************************************");
 
-            Console.WriteLine("startVaule " + startVaule);
+            Console.WriteLine("startValue " + startValue);
             Console.WriteLine("stopValue " + stopValue);
 
 
@@ -56,7 +56,7 @@ namespace Tyuiu.KorovinIK.Sprint5.Task1.V21
 
             Console.WriteLine("*****************************************************************************");
 
-            string res = ds.SaveToFileTextData(startVaule,stopValue);
+            string res = ds.SaveToFileTextData(startValue, stopValue);
 
             Console.WriteLine("y = " + File.ReadAllText(res));
 

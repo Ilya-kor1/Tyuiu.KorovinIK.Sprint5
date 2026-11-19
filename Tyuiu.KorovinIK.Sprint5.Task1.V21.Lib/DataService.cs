@@ -19,14 +19,24 @@ namespace Tyuiu.KorovinIK.Sprint5.Task1.V21.Lib
             string strY;
             for (int x  = startValue; x <= stopValue; x++)
             {
-                y = (2 * x - 3 / (Math.Cos(x) - 2 * x)) + 5 * x;
-                Math.Round(y, 2);
+                double denominator = Math.Cos(x) - 2 * x;
+
+                if (denominator == 0)
+                {
+                    y = 0;
+                }
+                else
+                {
+                    y = (2 * x - 3) / denominator + 5 * x - Math.Sin(x);
+                }
+
+                y = Math.Round(y, 2);
 
                 strY = Convert.ToString(y);
 
-                if(x== stopValue)
+                if (x == stopValue)
                 {
-                    File.AppendAllText(path, strY+ Environment.NewLine);
+                    File.AppendAllText(path, strY );
                 }
                 else
                 {
@@ -34,6 +44,7 @@ namespace Tyuiu.KorovinIK.Sprint5.Task1.V21.Lib
                 }
             }
             return path;
+
         }
     }
 }
