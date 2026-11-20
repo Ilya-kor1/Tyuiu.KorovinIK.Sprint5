@@ -6,7 +6,7 @@ namespace Tyuiu.KorovinIK.Sprint5.Task1.V21.Lib
     {
         public string SaveToFileTextData(int startValue, int stopValue)
         {
-            string path = Path.Combine(Path.GetTempPath(), "OutPutFileTask1.txt");
+            string path = Path.Combine(Directory.GetCurrentDirectory(), "OutPutFileTask1.txt");
             FileInfo fileInfo = new FileInfo(path);
             bool fileExists = fileInfo.Exists;
 
@@ -34,14 +34,7 @@ namespace Tyuiu.KorovinIK.Sprint5.Task1.V21.Lib
 
                 strY = Convert.ToString(y);
 
-                if (x == stopValue)
-                {
-                    File.AppendAllText(path, strY );
-                }
-                else
-                {
-                    File.AppendAllText(path, strY);
-                }
+                File.AppendAllText(path, strY + Environment.NewLine);
             }
             return path;
 
