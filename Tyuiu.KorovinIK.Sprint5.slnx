@@ -26,7 +26,12 @@
   </Folder>
   <Folder Name="/Task5/">
     <Project Path="Tyuiu.KorovinIK.Sprint5.Task5.V1.Lib/Tyuiu.KorovinIK.Sprint5.Task5.V1.Lib.csproj" Id="94cfe70a-db74-4800-9375-4447fc796fea" />
+    <Project Path="Tyuiu.KorovinIK.Sprint5.Task5.V1.Test/Tyuiu.KorovinIK.Sprint5.Task5.V1.Test.csproj" Id="65ecaff8-8e35-4e36-afad-5be7cb5b6dfe" />
     <Project Path="Tyuiu.KorovinIK.Sprint5.Task5.V1/Tyuiu.KorovinIK.Sprint5.Task5.V1.csproj" Id="c20b1e6b-53fa-4be6-bc2c-2f72f73e684d" />
   </Folder>
-  <Project Path="Tyuiu.KorovinIK.Sprint5.Task5.V1.Test/Tyuiu.KorovinIK.Sprint5.Task5.V1.Test.csproj" Id="65ecaff8-8e35-4e36-afad-5be7cb5b6dfe" />
+  <Folder Name="/Task6/">
+    <Project Path="Tyuiu.KorovinIK.Sprint5.Task6.V24.Lib/Tyuiu.KorovinIK.Sprint5.Task6.V24.Lib.csproj" Id="8a856edc-e91f-4fe6-a940-6b80617fba08" />
+    <Project Path="Tyuiu.KorovinIK.Sprint5.Task6.V24.Test/Tyuiu.KorovinIK.Sprint5.Task6.V24.Test.csproj" Id="9ab4e71f-a551-4602-9413-8583cea880a0" />
+    <Project Path="Tyuiu.KorovinIK.Sprint5.Task6.V24/Tyuiu.KorovinIK.Sprint5.Task6.V24.csproj" Id="3cd131e3-c219-4dbf-9467-04efd6c0cd42" />
+  </Folder>
 </Solution>
